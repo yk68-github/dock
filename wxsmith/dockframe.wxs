@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="dockFrame">
+		<id_arg>0</id_arg>
+		<object class="wxAuiManager" variable="AuiManager1" member="yes">
+			<object class="AuiManagerItem">
+				<object class="wxAuiToolBar" name="ID_AUITOOLBAR1" variable="AuiToolBar1" member="yes">
+					<pos>169,202</pos>
+					<object class="AuiToolBarItem">
+						<object class="wxButton" name="wxID_OK" variable="Button3" member="yes">
+							<label>Bouton OK</label>
+							<pos>42,5</pos>
+						</object>
+						<label>Item label</label>
+					</object>
+					<object class="AuiToolBarItem">
+						<object class="wxButton" name="wxID_CANCEL" variable="Button4" member="yes">
+							<label>Bonton Annuler</label>
+							<pos>52,11</pos>
+						</object>
+						<label>Item label</label>
+					</object>
+				</object>
+				<name>PaneName2</name>
+				<standardpanetype>Toolbar</standardpanetype>
+				<caption>Pane caption</caption>
+				<captionvisible>0</captionvisible>
+				<minimizebutton>0</minimizebutton>
+				<maximizebutton>0</maximizebutton>
+				<pinbutton>0</pinbutton>
+				<layer>10</layer>
+				<dockfixed>0</dockfixed>
+				<dockabledirection></dockabledirection>
+				<resizable>0</resizable>
+				<gripper>Default</gripper>
+				<destroyonclose>0</destroyonclose>
+				<firstadd>0</firstadd>
+			</object>
+			<object class="AuiManagerItem">
+				<object class="wxChoice" name="ID_CHOICE1" variable="Choice1" member="yes">
+					<pos>102,136</pos>
+					<size>300,320d</size>
+				</object>
+				<name>PaneName1</name>
+				<caption>Pane caption</caption>
+				<minimizebutton>0</minimizebutton>
+				<maximizebutton>0</maximizebutton>
+				<pinbutton>0</pinbutton>
+				<dockdirection>Left</dockdirection>
+				<dockfixed>0</dockfixed>
+				<dockabledirection></dockabledirection>
+				<destroyonclose>0</destroyonclose>
+				<firstadd>0</firstadd>
+			</object>
+		</object>
+		<object class="wxMenuBar" variable="MenuBar1" member="no">
+			<object class="wxMenu" variable="Menu1" member="no">
+				<label>&amp;File</label>
+				<object class="wxMenuItem" name="idMenuQuit" variable="MenuItem1" member="no">
+					<label>Quit</label>
+					<accel>Alt-F4</accel>
+					<help>Quit the application</help>
+					<handler function="OnQuit" entry="EVT_MENU" />
+				</object>
+			</object>
+			<object class="wxMenu" variable="Menu2" member="no">
+				<label>Help</label>
+				<object class="wxMenuItem" name="idMenuAbout" variable="MenuItem2" member="no">
+					<label>About</label>
+					<accel>F1</accel>
+					<help>Show info about this application</help>
+					<handler function="OnAbout" entry="EVT_MENU" />
+				</object>
+			</object>
+		</object>
+		<object class="wxStatusBar" name="ID_STATUSBAR1" variable="StatusBar1" member="yes">
+			<fields>1</fields>
+			<widths>-1</widths>
+			<styles>wxSB_NORMAL</styles>
+		</object>
+	</object>
+</wxsmith>
